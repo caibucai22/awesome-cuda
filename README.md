@@ -1,5 +1,15 @@
 收集整理有关深度学习网络cuda加速的各种项目、脚本、代码（包括cuda前后处理，Tensort重写网络等，偏部署方向）
 
+## CUDA-Learn-Notes
+
+https://github.com/DefTruth/CUDA-Learn-Notes
+
+一个cuda的学习仓库，收录了150+的kernel，包括了许多 transformer中使用的注意力模块加速实现；同时收录了 100+的 相关博客，包括 大模型、CV、推理部署加速。
+
+作者还有许多其他优秀的相关工作【集中在大模型推理、diffusion推理等方面】，大佬！！！
+
+值得学习！！！
+
 
 
 ## tensorrtx
