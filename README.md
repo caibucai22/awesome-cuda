@@ -8,6 +8,7 @@
 - [CUDA-Learn-Notes](#CUDA-Learn-Notes)
 - [tensorrtx](#tensorrtx)
 - [Pointcept](#Pointcept)
+- [Blogs](#Blogs)
 
 ## llama.cpp
 
@@ -95,3 +96,6 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 
 
 
+# Blogs
+
+- [知乎-国内大厂GPU CUDA高频面试问题汇总（含部分答案）](https://zhuanlan.zhihu.com/p/678602674)
