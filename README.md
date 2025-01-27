@@ -14,7 +14,9 @@
 
 
 
-## [How_to_optimize_in_GPU](https://github.com/Liu-xiandong/How_to_optimize_in_GPU) :star2:
+## How_to_optimize_in_GPU :star2:
+
+https://github.com/Liu-xiandong/How_to_optimize_in_GPU
 
 一个GPU kernel优化方面的教程，介绍了如何优化CUDA内核，以达到接近理论峰值的性能。包括
 
@@ -27,7 +29,9 @@
 
 
 
-## [llama.cpp](https://github.com/ggerganov/llama.cpp) :star2::star2::star2::star2::star2:
+## llama.cpp :star2::star2::star2::star2::star2:
+
+https://github.com/ggerganov/llama.cpp
 
 为llama等大模型提供一个高效灵活的推理框架，使得能够在本地设备上运行大语言模型。
 
@@ -47,7 +51,9 @@
 
 
 
-## [CUDA-Learn-Notes](https://github.com/DefTruth/CUDA-Learn-Notes) :star2::star2::star2:
+## CUDA-Learn-Notes :star2::star2::star2:
+
+https://github.com/DefTruth/CUDA-Learn-Notes
 
 一个cuda的学习仓库，收录了150+的kernel，包括了许多 transformer中使用的注意力模块加速实现；同时收录了 100+的 相关博客，包括 大模型、CV、推理部署加速。
 
@@ -71,7 +77,9 @@
 
 
 
-## [tensorrtx](https://github.com/wang-xinyu/tensorrtx) :star2::star2::star2:
+## tensorrtx :star2::star2::star2:
+
+https://github.com/wang-xinyu/tensorrtx 
 
 对经典的图像网络使用C++ Tensort Api进行了了重写，包括网络的权重加载，网络结构定义、构建 TensorRT 引擎，加载 TensorRT 引擎并运行推理
 
@@ -86,7 +94,9 @@
 
 
 
-## [Pointcept](https://github.com/Pointcept/Pointcept) :star2::star2::star2:
+## Pointcept :star2::star2::star2:
+
+https://github.com/Pointcept/Pointcept
 
 实现并统一了众多的点云网络，其中涉及点云的耗时操作，使用cuda编写加速，并提供python接口调用
 
