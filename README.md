@@ -12,36 +12,32 @@
 
 ## Table of Contents 
 
-- CUDA-directly-related
+- Basic
 
-  - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star2) :star2:
-
+  - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star2) :star:
+  - [cuda-learn-note]()
+  - [MatmulTutorial]()
 - LLM
 
-  - [llmam.cpp](#llamacpp-star2star2star2star2star2) :star2::star2::star2::star2::star2:
-
-  - [CUDA-Learn-Notes](#cuda-learn-notes-star2star2star2) :star2::star2::star2:
-
+  - [llmam.cpp](#llamacpp-star2star2star2star2star2) :star::star::star::star::star:
+  - [CUDA-Learn-Notes](#cuda-learn-notes-star2star2star2) :star::star::star:
+  - [ffpa-attn-mma]()
 - CV-Image
 
-  - [tensorrtx](#tensorrtx-star2star2star2) :star2::star2::star2:
-
+  - [tensorrtx](#tensorrtx-star2star2star2) :star::star::star:
 - CV-PointCloud
 
-  - [Pointcept](#pointcept-star2star2star2) :star2::star2::star2:
+  - [Pointcept](#pointcept-star2star2star2) :star::star::star:
+  - [CUDA-PointPillars]()
 
 
 - [Blogs](#Blogs) 
 
 
 
-
-
-
-
 ## Basic
 
-### How_to_optimize_in_GPU :star2:
+### How_to_optimize_in_GPU :star:
 
 https://github.com/Liu-xiandong/How_to_optimize_in_GPU
 
@@ -56,9 +52,31 @@ https://github.com/Liu-xiandong/How_to_optimize_in_GPU
 
 
 
+### cuda-learn-note
+
+https://github.com/whutbd/cuda-learn-note fork 了 https://github.com/DefTruth/CUDA-Learn-Notes:main
+
+但更偏向于面试、个人总结
+
+提供了很多面试常见的kernel实现，以及优化手段的总结、block-tile、k-tile、vec4
+
+
+
+### MatmulTutorial
+
+https://github.com/KnowingNothing/MatmulTutorial
+
+提供一个关于CUDA矩阵乘法 (Matrix Multiplication, Matmul) 的学习教程，初学者友好，使用了不同实现方式包括 cutlass、triton、自行手撸、以及在不同平台的实现
+
+https://github.com/KnowingNothing/MatmulTutorial/tree/main/examples/matmul 点击直达
+
+此外也提供了 reduction、attention操作的基础kernel实现
+
+
+
 ## LLM
 
-### llama.cpp :star2::star2::star2::star2::star2:
+### llama.cpp :star::star::star::star::star:
 
 https://github.com/ggerganov/llama.cpp
 
@@ -80,7 +98,7 @@ https://github.com/ggerganov/llama.cpp
 
 
 
-### CUDA-Learn-Notes :star2::star2::star2:
+### CUDA-Learn-Notes :star::star::star:
 
 https://github.com/DefTruth/CUDA-Learn-Notes
 
@@ -122,7 +140,7 @@ https://github.com/DefTruth/ffpa-attn-mma
 
 ## CV-Image
 
-## tensorrtx :star2::star2::star2:
+## tensorrtx :star::star::star:
 
 https://github.com/wang-xinyu/tensorrtx 
 
@@ -160,9 +178,11 @@ https://github.com/NVIDIA-AI-IOT/CUDA-PointPillars/tree/main/src/pointpillar 点
 - **CUDA Kernel 优化**：  kernel launch 优化、内存管理优化
 - **后处理 (Postprocessing with CUDA)**：NMS、BBox 解析转换
 
-是学习使用cuda 加速点云网络的优秀实例，
+是学习使用cuda 加速点云网络的优秀实例
 
-### Pointcept :star2::star2::star2:
+
+
+### Pointcept :star::star::star:
 
 https://github.com/Pointcept/Pointcept
 
@@ -186,6 +206,10 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [知乎-国内大厂GPU CUDA高频面试问题汇总（含部分答案）](https://zhuanlan.zhihu.com/p/678602674)
 - [知乎-深入浅出GPU优化系列：reduce优化 ](https://zhuanlan.zhihu.com/p/426978026)
 - [NVIDIA-CUDA reduce optimization](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
+- [unsloth-blogs](https://unsloth.ai/blog)
+- [整理的名词一栏]()
+
+
 
 
 
