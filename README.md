@@ -14,21 +14,21 @@
 
 - Basic
 
-  - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star2) :star:
-  - [cuda-learn-note]()
-  - [MatmulTutorial]()
+  - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
+  - [cuda-learn-note](#cuda-learn-note)
+  - [MatmulTutorial](#matmultutorial)
 - LLM
 
-  - [llmam.cpp](#llamacpp-star2star2star2star2star2) :star::star::star::star::star:
-  - [CUDA-Learn-Notes](#cuda-learn-notes-star2star2star2) :star::star::star:
-  - [ffpa-attn-mma]()
+  - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
+  - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
+  - [ffpa-attn-mma](#ffpa-attn-mma)
 - CV-Image
 
-  - [tensorrtx](#tensorrtx-star2star2star2) :star::star::star:
+  - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
 - CV-PointCloud
+  - [CUDA-PointPillars](#cuda-pointpillars)
+  - [Pointcept](#pointcept-starstarstar) :star::star::star:
 
-  - [Pointcept](#pointcept-star2star2star2) :star::star::star:
-  - [CUDA-PointPillars]()
 
 
 - [Blogs](#Blogs) 
@@ -207,7 +207,7 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [知乎-深入浅出GPU优化系列：reduce优化 ](https://zhuanlan.zhihu.com/p/426978026)
 - [NVIDIA-CUDA reduce optimization](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
 - [unsloth-blogs](https://unsloth.ai/blog)
-- [整理的名词一栏]()
+- [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
 
 
 
