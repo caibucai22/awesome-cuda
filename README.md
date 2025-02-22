@@ -52,14 +52,20 @@ https://github.com/Liu-xiandong/How_to_optimize_in_GPU
 
 
 
-### cuda-learn-note
+### cuda-learn-note <img src=https://img.shields.io/badge/tip-interview-brightgreen.svg >
 
 https://github.com/whutbd/cuda-learn-note fork 了 https://github.com/DefTruth/CUDA-Learn-Notes:main
 
-但更偏向于面试、个人总结
+面试向、个人总结
 
 提供了很多面试常见的kernel实现，以及优化手段的总结、block-tile、k-tile、vec4
 
+### AI-Interview-Code <img src=https://img.shields.io/badge/tip-interview-brightgreen.svg >
+
+https://github.com/bbruceyuan/AI-Interview-Code 仅引流
+真实地址 https://bruceyuan.com/hands-on-code/
+
+面试向，手写注意力机制等，Python 实现
 
 
 ### MatmulTutorial
