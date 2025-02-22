@@ -16,6 +16,7 @@
 
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
   - [cuda-learn-note](#cuda-learn-note)
+  - [AI-Interview-Code](#ai-interview-code)
   - [MatmulTutorial](#matmultutorial)
 - LLM
 
