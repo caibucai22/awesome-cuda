@@ -8,6 +8,7 @@
 | flash_attn/FlashAttention |                                                        |
 | FMHA                      | (Fused Multi-Head Attention, 融合多头注意力)           |
 | FMHCA                     | (Fused Multi-Head Cross-Attention, 融合多头交叉注意力) |
+| MLA                       | (multi-head latent attention，多头潜在注意力)          |
 
 
 

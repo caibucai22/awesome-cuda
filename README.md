@@ -23,6 +23,7 @@
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
   - [ffpa-attn-mma](#ffpa-attn-mma)
+  - [FlashMLA](#flashmla)
 - CV-Image
 
   - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
@@ -143,6 +144,23 @@ https://github.com/DefTruth/ffpa-attn-mma
 作者在不同 NVIDA GPU 平台进行了测试 https://github.com/DefTruth/ffpa-attn-mma/tree/main/bench 点击直达
 
 源码实现 https://github.com/DefTruth/ffpa-attn-mma/tree/main/csrc/cuffpa 点击直达 ，同时使用pybind 提供了 python接口
+
+
+
+### FlashMLA
+
+https://github.com/deepseek-ai/FlashMLA
+
+FlashMLA 是针对 Hopper GPU 的高效 MLA (multi-head latent attention)解码内核，针对可变长度（用户输入token不规则）序列服务进行了优化（在生产环境中经过实战检验）。
+
+提供了原始kernel实现，以及python 调用
+
+当前发布特性：
+
+- 支持BF16 
+- 分页 KV 缓存，块大小为 64
+
+> 提及受到 FlashAttention2/3 启发
 
 
 
