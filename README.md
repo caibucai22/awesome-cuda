@@ -24,6 +24,7 @@
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
   - [ffpa-attn-mma](#ffpa-attn-mma)
   - [FlashMLA](#flashmla)
+  - [DeepGEMM](#deepgemm)
 - CV-Image
 
   - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
@@ -161,6 +162,20 @@ FlashMLA 是针对 Hopper GPU 的高效 MLA (multi-head latent attention)解码�
 - 分页 KV 缓存，块大小为 64
 
 > 提及受到 FlashAttention2/3 启发
+
+
+
+### DeepGEMM
+
+https://github.com/deepseek-ai/DeepGEMM
+
+DeepGEMM 是 DeepSeek-V3 中提出的一个库，旨在利用细粒度缩放实现简洁高效的 FP8 通用矩阵乘法（GEMM）。它支持普通和专家混合（MoE）分组 GEMM。该库采用 CUDA 编写，在运行时使用轻量级即时 (JIT) 模块编译所有内核，安装时无需编译。
+
+DeepGEMM 只支持英伟达公司的 Hopper tensor core。为了解决不精确的 FP8 tensor core 累加问题，它采用了 CUDA core 两级累加（promotion）技术。
+
+虽然它利用了 CUTLASS 和 CuTe 的一些概念，但避免了对它们的模板或代数的严重依赖。相反，该库的设计非常简单，只有一个核心内核函数，约 300 行代码。这使它成为学习 Hopper FP8 矩阵乘法和优化技术的简洁易用的资源。
+
+设计轻巧，DeepGEMM 在各种矩阵形状下的性能仍可媲美甚至超越经过专家调整的库
 
 
 
