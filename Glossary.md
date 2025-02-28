@@ -1,10 +1,22 @@
-## Attention
+## LLM
+
+| Noun     | Explain |
+| -------- | ------- |
+| KV-Cache |         |
+|          |         |
+|          |         |
+
+
+
+### Attention
 
 
 | Attention                 | Explain                                                |
 | ------------------------- | ------------------------------------------------------ |
 | SDPA                      | (scaled dot product attention，缩放点积注意力)         |
 | MHA                       | (multi-head attention，多头注意力)                     |
+| MQA                       | (multi-query-attention，多查询注意力)                  |
+| GQA                       | (grouped-query-attention，分组查询注意力)              |
 | flash_attn/FlashAttention |                                                        |
 | FMHA                      | (Fused Multi-Head Attention, 融合多头注意力)           |
 | FMHCA                     | (Fused Multi-Head Cross-Attention, 融合多头交叉注意力) |
