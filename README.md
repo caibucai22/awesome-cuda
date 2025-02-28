@@ -3,8 +3,8 @@
   <img src=https://img.shields.io/github/downloads/caibucai22/awesome-cuda/total?color=ccf&label=downloads&logo=github&logoColor=lightgrey >
   <img src=https://img.shields.io/github/stars/caibucai22/awesome-cuda.svg?style=social >
   <img src=https://img.shields.io/badge/Release-preparing-brightgreen.svg >
-  <img src=https://img.shields.io/badge/License-GPLv3.0-turquoise.svg >
  </div>
+
 
 # awesome-cuda
 
@@ -18,6 +18,7 @@
   - [cuda-learn-note](#cuda-learn-note)
   - [AI-Interview-Code](#ai-interview-code-)
   - [MatmulTutorial](#matmultutorial)
+  - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
 - LLM
 
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
@@ -25,6 +26,8 @@
   - [ffpa-attn-mma](#ffpa-attn-mma)
   - [FlashMLA](#flashmla)
   - [DeepGEMM](#deepgemm)
+  - [grouped_gemm](#grouped_gemm)
+  - [SpargeAttn](#spargeattn)
 - CV-Image
 
   - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
@@ -63,6 +66,8 @@ https://github.com/whutbd/cuda-learn-note fork 了 https://github.com/DefTruth/C
 
 提供了很多面试常见的kernel实现，以及优化手段的总结、block-tile、k-tile、vec4
 
+
+
 ### AI-Interview-Code <img src=https://img.shields.io/badge/tip-interview-brightgreen.svg >
 
 https://github.com/bbruceyuan/AI-Interview-Code 仅引流
@@ -70,6 +75,8 @@ https://github.com/bbruceyuan/AI-Interview-Code 仅引流
 真实地址 https://bruceyuan.com/hands-on-code/
 
 面试向，手写注意力机制等，Python 实现
+
+
 
 
 ### MatmulTutorial
@@ -81,6 +88,30 @@ https://github.com/KnowingNothing/MatmulTutorial
 https://github.com/KnowingNothing/MatmulTutorial/tree/main/examples/matmul 点击直达
 
 此外也提供了 reduction、attention操作的基础kernel实现
+
+
+
+### how-to-optim-algorithm-in-cuda
+
+https://github.com/BBuf/how-to-optim-algorithm-in-cuda
+
+结合很多当下的模型 /框架 展开讨论 如何优化cuda算法，如
+
+- oneflow 中的 elementwise
+- pytorch 中的 index_add
+- FastTransformer
+- OpenAI 的 triton
+- ...
+
+提供了很多代码示例可供学习参考，
+
+作者的原创学习笔记
+
+https://github.com/BBuf/how-to-optim-algorithm-in-cuda?tab=readme-ov-file#20-%E5%8E%9F%E5%88%9B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0 点击直达
+
+同时收录整理了很多优秀的博客（非常值得阅读，推荐）
+
+https://github.com/BBuf/how-to-optim-algorithm-in-cuda?tab=readme-ov-file#%E6%96%87%E7%AB%A0 点击直达
 
 
 
@@ -176,6 +207,26 @@ DeepGEMM 只支持英伟达公司的 Hopper tensor core。为了解决不精确�
 虽然它利用了 CUTLASS 和 CuTe 的一些概念，但避免了对它们的模板或代数的严重依赖。相反，该库的设计非常简单，只有一个核心内核函数，约 300 行代码。这使它成为学习 Hopper FP8 矩阵乘法和优化技术的简洁易用的资源。
 
 设计轻巧，DeepGEMM 在各种矩阵形状下的性能仍可媲美甚至超越经过专家调整的库
+
+
+
+### grouped_gemm
+
+https://github.com/tgale96/grouped_gemm
+
+一个轻量级的库在Pytorch中提供 由 cutlass 实现的 grouped gemm kernels 
+
+
+
+### SpargeAttn
+
+https://github.com/thu-ml/SpargeAttn
+
+SpargeAttention的官方实现，一种无训练的稀疏注意力，可以加速任何模型推断
+
+论文：SpargeAttn: Accurate Sparse Attention Accelerating Any Model Inference
+
+Paper: https://arxiv.org/abs/2502.18137
 
 
 
