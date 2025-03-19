@@ -43,6 +43,14 @@
 
 ## Basic
 
+### CUDA_Freshman 
+
+https://github.com/Tony-Tan/CUDA_Freshman
+
+来自谭升博客对 CUDA_C_Programing  内容的实现，原博客有更多对于CUDA知识的理解，质量很高，是入门CUDA编程很好的教程，推荐
+
+
+
 ### How_to_optimize_in_GPU :star:
 
 https://github.com/Liu-xiandong/How_to_optimize_in_GPU
@@ -300,6 +308,7 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [NVIDIA-CUDA reduce optimization](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
 - [unsloth-blogs](https://unsloth.ai/blog)
 - [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
+- [谭升的博客 CUDA_C_Programing系列]([分类: CUDA | 谭升的博客](https://face2ai.com/categories/CUDA/))
 
 
 
