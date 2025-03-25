@@ -16,7 +16,7 @@
   - [CUDA_Freshman](#CUDA_Freshman)
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
   - [cuda-learn-note](#cuda-learn-note-)
-  - [CUDA_Kernel_Samples](#CUDA_Kernel_Samples -)
+  - [CUDA_Kernel_Samples](#CUDA_Kernel_Samples-)
   - [AI-Interview-Code](#ai-interview-code-)
   - [MatmulTutorial](#matmultutorial)
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
