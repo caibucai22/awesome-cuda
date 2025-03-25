@@ -13,12 +13,14 @@
 ## Table of Contents 
 
 - Basic
-
+  - [CUDA_Freshman](#CUDA_Freshman)
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
-  - [cuda-learn-note](#cuda-learn-note)
+  - [cuda-learn-note](#cuda-learn-note-)
+  - [CUDA_Kernel_Samples ](#CUDA_Kernel_Samples -)
   - [AI-Interview-Code](#ai-interview-code-)
   - [MatmulTutorial](#matmultutorial)
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
+
 - LLM
 
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
@@ -43,7 +45,7 @@
 
 ## Basic
 
-### CUDA_Freshman 
+### CUDA_Freshman
 
 https://github.com/Tony-Tan/CUDA_Freshman
 
@@ -73,6 +75,14 @@ https://github.com/whutbd/cuda-learn-note fork 了 https://github.com/DefTruth/C
 面试向、个人总结
 
 提供了很多面试常见的kernel实现，以及优化手段的总结、block-tile、k-tile、vec4
+
+
+
+### CUDA_Kernel_Samples <img src=https://img.shields.io/badge/tip-interview-brightgreen.svg >
+
+https://github.com/Tongkaio/CUDA_Kernel_Samples
+
+面试向，整理了一些高频的CUDA算子题目（从 naive 到 优化版本），和 [cuda-learn-note]() 存在一定重合
 
 
 
@@ -309,8 +319,6 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [unsloth-blogs](https://unsloth.ai/blog)
 - [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
 - [谭升的博客 CUDA_C_Programing系列]([分类: CUDA | 谭升的博客](https://face2ai.com/categories/CUDA/))
-
-
-
-
+- [ZOMI AI体系知识： 硬件、编程、编译、推理系统&引擎&框架 ](https://chenzomi12.github.io/index.html)
+- [ 奔跑的IC CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/)
 
