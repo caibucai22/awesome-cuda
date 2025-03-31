@@ -8,11 +8,12 @@
 
 # awesome-cuda
 
-收集整理有关深度学习网络cuda加速的各种项目、脚本、代码（包括cuda前后处理及其他kernel，Tensort重写网络等，偏部署，加速方向）
+收集整理有关深度学习网络cuda加速的各种项目（包括cuda前后处理、kernel、TensorRT重写网络等，偏部署，加速方向）
 
 ## Table of Contents 
 
 - Basic
+  - [GPU-Puzzles](#gpu-puzzles)
   - [CUDA_Freshman](#CUDA_Freshman)
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
   - [cuda-learn-note](#cuda-learn-note-)
@@ -20,9 +21,11 @@
   - [AI-Interview-Code](#ai-interview-code-)
   - [MatmulTutorial](#matmultutorial)
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
+  - [tutorial-multi-gpu](#tutorial-multi-gpu)
 
 - LLM
 
+  - [Awesome-LLM-Inference](#awesome-llm-inference)
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
   - [ffpa-attn-mma](#ffpa-attn-mma)
@@ -30,6 +33,7 @@
   - [DeepGEMM](#deepgemm)
   - [grouped_gemm](#grouped_gemm)
   - [SpargeAttn](#spargeattn)
+  - [gpu-topk](#gpu-topk)
 - CV-Image
 
   - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
@@ -44,6 +48,24 @@
 
 
 ## Basic
+
+### GPU-Puzzles
+
+https://github.com/srush/GPU-Puzzles
+
+python 实现，和low level的CUDA代码是等价的 不使用高级操作，仅仅是 + * 这种简单操作，并实现了一种可视化，以notebook进行学习，推荐使用colab；
+
+
+
+2025/3/25 测试 发现 运行 problem.check()
+
+ERROR:numba.cuda.cudadrv.driver:Call to cuLinkAddData results in CUDA_ERROR_UNSUPPORTED_PTX_VERSION
+
+好像存在驱动版本问题，需要修改配置环境 才能正常运行
+
+
+
+这个作者还提供了 其他相关仓库，Triton-Puzzles Tensor-Puzzles
 
 ### CUDA_Freshman
 
@@ -133,7 +155,23 @@ https://github.com/BBuf/how-to-optim-algorithm-in-cuda?tab=readme-ov-file#%E6%96
 
 
 
+### tutorial-multi-gpu
+
+https://github.com/FZJ-JSC/tutorial-multi-gpu
+
+学习一下分布式GPU编程
+
+
+
 ## LLM
+
+### Awesome-LLM-Inference
+
+https://github.com/xlite-dev/Awesome-LLM-Inference
+
+有关大模型推理的一切：各种并行方式、分解预填充和解码、LLM 训练\推理框架、权重/激活 量化和压缩、并行解码\采样
+
+超大杯
 
 ### llama.cpp :star::star::star::star::star:
 
@@ -245,6 +283,12 @@ SpargeAttention的官方实现，一种无训练的稀疏注意力，可以加�
 论文：SpargeAttn: Accurate Sparse Attention Accelerating Any Model Inference
 
 Paper: https://arxiv.org/abs/2502.18137
+
+
+
+### gpu-topk
+
+https://github.com/anilshanbhag/gpu-topk
 
 
 
