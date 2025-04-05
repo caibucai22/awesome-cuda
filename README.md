@@ -35,7 +35,9 @@
   - [SpargeAttn](#spargeattn)
   - [gpu-topk](#gpu-topk)
 - CV-Image
-
+  - [CudaSift](#cudasift)
+  - [CV-CUDA](#cv-cuda)
+  - [tsne-cuda](#tsne-cuda)
   - [tensorrtx](#tensorrtx-starstarstar) :star::star::star:
 - CV-PointCloud
   - [CUDA-PointPillars](#cuda-pointpillars)
@@ -293,6 +295,33 @@ https://github.com/anilshanbhag/gpu-topk
 
 
 ## CV-Image
+
+### CV-CUDA
+
+https://github.com/CVCUDA/CV-CUDA
+
+CV-CUDA™ 是一个开源的 GPU 加速库，适用于云规模图像处理和计算机视觉。它使用GPU加速，帮助开发人员构建高效的**前处理**和**后处理** 管道
+
+由 NVDIA 和 ByteDance 联合开发
+
+### CudaSift
+
+https://github.com/Celebrandil/CudaSift
+
+Sift 的cuda 实现 在GTX 1060平台 1280x960 图片花费1.2ms 1920x1080 1.7ms
+
+### tsne-cuda
+
+https://github.com/CannyLab/tsne-cuda
+
+GPU加速的tsne实现，宣称比 sklearn 快 1200x 倍，并提供了 python binding
+
+```bash
+conda install tsnecuda -c conda-forge # cuda 10.1 10.2
+```
+
+方法 和 结果 详细内容 可以通过 https://arxiv.org/abs/1807.11824 获取
+
 
 ## tensorrtx :star::star::star:
 
