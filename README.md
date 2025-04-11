@@ -35,6 +35,7 @@
   - [SpargeAttn](#spargeattn)
   - [gpu-topk](#gpu-topk)
 - CV-Image
+  - [tensorrt_demos](#tensorrt_demos)
   - [CudaSift](#cudasift)
   - [CV-CUDA](#cv-cuda)
   - [tsne-cuda](#tsne-cuda)
@@ -295,6 +296,21 @@ https://github.com/anilshanbhag/gpu-topk
 
 
 ## CV-Image
+
+### tensorrt_demos
+https://github.com/jkjung-avt/tensorrt_demos
+
+在 NVIDIA Jetson 平台（例如 Jetson Nano, TX2, Xavier NX/AGX, Orin 系列）上运行经 NVIDIA TensorRT 加速的各种深度学习模型。
+
+依赖的 TensorRT 版本较低，不同的demo 有不同的版本依赖，需要区分
+
+提供的模型demo包括
+- GoogleNet
+- yolov3 ,yolov4
+- SSD
+- MODNet
+
+帮助入门学习在 Jetson 上使用 TensorRT 进行推理
 
 ### CV-CUDA
 
