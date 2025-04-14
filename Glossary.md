@@ -1,10 +1,10 @@
 ## LLM
 
-| Noun     | Explain |
-| -------- | ------- |
-| KV-Cache |         |
-|          |         |
-|          |         |
+| Noun       | Explain |
+| ---------- | ------- |
+| KV-Cache   |         |
+| prefilling |         |
+| decoding   |         |
 
 
 

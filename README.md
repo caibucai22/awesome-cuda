@@ -22,9 +22,9 @@
   - [MatmulTutorial](#matmultutorial)
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
   - [tutorial-multi-gpu](#tutorial-multi-gpu)
-
 - LLM
-
+  - [vLLM](#vllm)
+  - [sglang](#sglang)
   - [Awesome-LLM-Inference](#awesome-llm-inference)
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
@@ -35,6 +35,7 @@
   - [SpargeAttn](#spargeattn)
   - [gpu-topk](#gpu-topk)
 - CV-Image
+  - [jetson-inference](#jetson-inference)
   - [tensorrt_demos](#tensorrt_demos)
   - [CudaSift](#cudasift)
   - [CV-CUDA](#cv-cuda)
@@ -168,6 +169,44 @@ https://github.com/FZJ-JSC/tutorial-multi-gpu
 
 ## LLM
 
+### vllm
+
+https://github.com/vllm-project/vllm
+
+一个高吞吐量、高内存效率的 LLMs 推理和服务引擎
+
+> 和 sglang 都是优先选择的框架
+
+vLLM 快在哪里
+
+- State-of-the-art serving throughput
+- Efficient management of attention key and value memory with PagedAttention
+- Continuous batching of incoming requests
+- Fast model execution with CUDA/HIP graph
+- Quantizations: GPTQ, AWQ, INT4, INT8, and FP8.
+- Optimized CUDA kernels, including integration with FlashAttention and FlashInfer.
+- Speculative decoding
+- Chunked prefill
+
+支持模型（特别是对于HuggingFace 上模型无缝支持）
+
+- Transformer-like LLMs (e.g., Llama)
+- Mixture-of-Expert LLMs (e.g., Mixtral, Deepseek-V2 and V3)
+- Embedding Models (e.g. E5-Mistral)
+- Multi-modal LLMs (e.g., LLaVA)
+
+### sglang
+
+https://github.com/sgl-project/sglang
+
+一个用于大型语言模型和视觉语言模型的快速服务框架，
+
+> 是目前很多公司部署的优先选择之一
+
+fast backend runtime： 利用 RadixAttention 为前缀缓存、零开销 CPU 调度器、连续批处理、标记关注（分页关注）、投机解码、张量并行、分块预填充、结构化输出和量化（FP8/INT4/AWQ/GPTQ）提供高效服务。
+
+extensive model support：支持广泛的生成模型（Llama，Gemma，Mistral，Qwen，DeepSeek，Llava等），嵌入模型（E5- MISTRAL，GTE，MCDSE）和奖励模型（Skywork），易于扩展可扩展的新模型。
+
 ### Awesome-LLM-Inference
 
 https://github.com/xlite-dev/Awesome-LLM-Inference
@@ -297,6 +336,21 @@ https://github.com/anilshanbhag/gpu-topk
 
 ## CV-Image
 
+### jetson-inference
+
+https://github.com/dusty-nv/jetson-inference
+
+使用 TensorRT 和 NVIDIA Jetson 部署深度学习推理网络和深度视觉基元的指南，目前支持
+
+- 图像分类
+- 目标检测
+- 图像分割
+- 姿势估计 ，动作识别
+- 背景移除
+- 单目深度估计
+
+
+
 ### tensorrt_demos
 https://github.com/jkjung-avt/tensorrt_demos
 
@@ -405,6 +459,7 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [知乎-国内大厂GPU CUDA高频面试问题汇总（含部分答案）](https://zhuanlan.zhihu.com/p/678602674)
 - [知乎-深入浅出GPU优化系列：reduce优化 ](https://zhuanlan.zhihu.com/p/426978026)
 - [NVIDIA-CUDA reduce optimization](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
+- [NVIDIA-cuSparse documention](https://docs.nvidia.com/cuda/cusparse/index.html)
 - [unsloth-blogs](https://unsloth.ai/blog)
 - [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
 - [谭升的博客 CUDA_C_Programing系列]([分类: CUDA | 谭升的博客](https://face2ai.com/categories/CUDA/))
