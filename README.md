@@ -462,7 +462,7 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - [NVIDIA-cuSparse documention](https://docs.nvidia.com/cuda/cusparse/index.html)
 - [unsloth-blogs](https://unsloth.ai/blog)
 - [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
-- [谭升的博客 CUDA_C_Programing系列]([分类: CUDA | 谭升的博客](https://face2ai.com/categories/CUDA/))
+- [谭升的博客 CUDA_C_Programing系列](https://face2ai.com/categories/CUDA/)
 - [ZOMI AI体系知识： 硬件、编程、编译、推理系统&引擎&框架 ](https://chenzomi12.github.io/index.html)
 - [ 奔跑的IC CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/)
 
