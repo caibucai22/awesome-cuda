@@ -45,7 +45,10 @@
 - CV-PointCloud
   - [CUDA-PointPillars](#cuda-pointpillars)
   - [Pointcept](#pointcept-starstarstar) :star::star::star:
-
+- DL Compiler
+  - [tvm_mlir_learn](#tvm_mlir_learn)
+- NVDIA
+  - [DALI](#dali)
 
 
 - [Blogs](#Blogs) 
@@ -344,6 +347,13 @@ https://github.com/anilshanbhag/gpu-topk
 
 ## CV-Image
 
+### tensorrt_demos
+
+https://github.com/jkjung-avt/tensorrt_demos
+
+视觉模型部署到Jetsno Nano、TX2、Xavier NX DevKits，部署的模型有些老旧，可以进行参考学习
+包括 GoogleLeNet MTCNN SSD YOLOv3 YOLOv4 MODNet
+
 ### jetson-inference
 
 https://github.com/dusty-nv/jetson-inference
@@ -461,6 +471,37 @@ https://github.com/Pointcept/Pointcept/tree/main/libs 点击直达
 - knnquery
 - subtraction
 - 注意力机制、相对位置编码rpe等
+
+## DL Compiler
+
+### tvm_mlir_learn
+https://github.com/BBuf/tvm_mlir_learn
+
+（高质量）BBuf的项目，记录和分享学习AI编译器，主要是 TVM 和 MLIR 同时也收录了很多AI编译器相关学习资源
+
+## NVIDIA
+
+关注 NVIDIA 官方生态
+
+### Tensort-LLM
+
+https://github.com/NVIDIA/TensorRT-LLM
+
+NVIDIA的官方推理框架
+
+Tensorrt-LLM是一个开源库，用于优化大型语言模型（LLM）推理。它提供了最新的优化，包括custom attention kernels，inflight batching，paged kV caching，量化（FP8，FP4，INT4 AWQ，INT8 SmoothQuant，...），speculative decoding等等，以便在NVIDIA GPU上有效地进行推理。
+
+### cuda-python
+
+https://github.com/NVIDIA/cuda-python
+
+为CUDA提供Python接口实现
+
+### DALI
+
+https://github.com/NVIDIA/DALI
+
+NVIDIA数据加载库（DALI）是一个用于数据加载和预处理的GPU加速库，可加速深度学习应用程序。提供了一系列高度优化的构件，用于加载和处理图像，视频和音频数据。
 
 # Blogs
 
