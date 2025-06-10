@@ -48,6 +48,8 @@
 - DL Compiler
   - [tvm_mlir_learn](#tvm_mlir_learn)
 - NVDIA
+  - [Tensort-LLM](#tensort-llm)
+  - [cuda-python](#cuda-python)
   - [DALI](#dali)
 
 
@@ -346,13 +348,6 @@ https://github.com/anilshanbhag/gpu-topk
 
 
 ## CV-Image
-
-### tensorrt_demos
-
-https://github.com/jkjung-avt/tensorrt_demos
-
-视觉模型部署到Jetsno Nano、TX2、Xavier NX DevKits，部署的模型有些老旧，可以进行参考学习
-包括 GoogleLeNet MTCNN SSD YOLOv3 YOLOv4 MODNet
 
 ### jetson-inference
 
