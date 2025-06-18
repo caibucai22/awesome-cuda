@@ -23,6 +23,7 @@
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
   - [tutorial-multi-gpu](#tutorial-multi-gpu)
   - [CUDA-Related](#cuda-related)
+  - [Cute-learning](#cute-learning)
 - LLM
   - [vLLM](#vllm)
   - [sglang](#sglang)
@@ -179,6 +180,23 @@ https://github.com/sungenglab/CUDA-Related
 分为 新手（CUDA入门）、初阶（Matmul性能优化）、中阶（Reduce优化、GEMM优化、卷积算子优化）、高阶 以及LLM推理(Page Attention、vllm源码解读)
 
 文章、代码 质量都很高
+
+
+
+### Cute-Learning
+
+https://github.com/DD-DuDa/Cute-Learning
+
+使用Cutlass Cute提供了多种kernel实现，包括
+
+- GEMM GEMV
+- Flash-Decoding
+- LDSM （ldmatrix instruction)
+- Tensor Dequant
+- Data copy
+- ...
+
+是上手学习cutlass cute编程的一个好工作
 
 ## LLM
 
@@ -497,6 +515,10 @@ https://github.com/NVIDIA/cuda-python
 https://github.com/NVIDIA/DALI
 
 NVIDIA数据加载库（DALI）是一个用于数据加载和预处理的GPU加速库，可加速深度学习应用程序。提供了一系列高度优化的构件，用于加载和处理图像，视频和音频数据。
+
+### CCCL
+
+CCCL = Thrust(并行算法库) + CUB(优化的并行原语库) + libcudacxx(CUDA C++ 标准库实现)
 
 # Blogs
 
