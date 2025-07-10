@@ -24,6 +24,7 @@
   - [how-to-optim-algorithm-in-cuda](#how-to-optim-algorithm-in-cuda)
   - [tutorial-multi-gpu](#tutorial-multi-gpu)
   - [CUDA-Related](#cuda-related)
+  - [cudnn-fronted](#cudnn-fronted)
   - [Cute-learning](#cute-learning)
 - LLM
   - [vLLM](#vllm)
@@ -31,6 +32,7 @@
   - [Awesome-LLM-Inference](#awesome-llm-inference)
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
+  - [llm.c](#llmc) :star::star::star::star:
   - [cuda_self-attention](#cuda_self-attention)
   - [FlashAttention](#flash-attention)
   - [ffpa-attn-mma](#ffpa-attn-mma)
@@ -194,6 +196,11 @@ https://github.com/sungenglab/CUDA-Related
 文章、代码 质量都很高
 
 
+### cudnn-fronted
+
+https://github.com/NVIDIA/cudnn-frontend
+
+NVIDIA官方库，为cudnn backend api 提供了cpp wrapper 调用，该仓库同时提供了相关的使用实例
 
 ### Cute-Learning
 
@@ -278,6 +285,15 @@ https://github.com/ggerganov/llama.cpp
 
 对于大语言模型的量化，加速优化操作学习具有重要参考意义。
 
+### llm.c
+
+https://github.com/karpathy/llm.c
+
+大佬用 C/CUDA 实现了 LLM 的traning，在这个仓库可以找到各种 llm 中用到的基础算子，包括 forward 和 backward
+
+同时提供了 CPU/GPU的实现，在 dev/目录下 可以找到 你需要学习和使用的算子，包括
+
+adamw、gelu、attention、layernorm、matmul、softmax 等，以及更高的封装 encoder_forward 
 
 
 ### CUDA-Learn-Notes :star::star::star:
