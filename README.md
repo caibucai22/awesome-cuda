@@ -13,6 +13,7 @@
 ## Table of Contents 
 
 - Basic
+  - [cuda-samples](#cuda-samples) :star::star::star::star::star:
   - [GPU-Puzzles](#gpu-puzzles)
   - [CUDA_Freshman](#CUDA_Freshman)
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
@@ -30,6 +31,8 @@
   - [Awesome-LLM-Inference](#awesome-llm-inference)
   - [llmam.cpp](#llamacpp-starstarstarstarstar) :star::star::star::star::star:
   - [CUDA-Learn-Notes](#cuda-learn-notes-starstarstar) :star::star::star:
+  - [cuda_self-attention](#cuda_self-attention)
+  - [FlashAttention](#flash-attention)
   - [ffpa-attn-mma](#ffpa-attn-mma)
   - [FlashMLA](#flashmla)
   - [DeepGEMM](#deepgemm)
@@ -59,6 +62,15 @@
 
 
 ## Basic
+
+
+### cuda-samples
+
+https://github.com/NVIDIA/cuda-samples
+
+来自NVIDIA的cuda编程示例，并不基础，光是入门0_introduction部分都有很多内容
+
+非常好的学习资料
 
 ### GPU-Puzzles
 
@@ -290,7 +302,20 @@ https://github.com/DefTruth/CUDA-Learn-Notes
 
 值得学习！！！
 
+### cuda_self-attention
 
+https://github.com/Fizzmy/cuda_self_attention
+
+主要实现了 self-attention 以及 multi-head attention，并用pybind11进行导出提供python调用
+
+将attention 操作拆分成了很细粒度的算子
+
+### flash-attention
+https://github.com/Dao-AILab/flash-attention
+
+算法实现与物理硬件的极致联合优化！！! FlashAttention v1 v2 官方实现
+
+学完了一般的attention实现，可以上手学习
 
 ### ffpa-attn-mma
 
