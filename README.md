@@ -14,6 +14,7 @@
 
 - Basic
   - [cuda-samples](#cuda-samples) :star::star::star::star::star:
+  - [tensorrt-cookbook](#tensort-cookbook)
   - [GPU-Puzzles](#gpu-puzzles)
   - [CUDA_Freshman](#CUDA_Freshman)
   - [How_to_optimize_in_GPU](#how_to_optimize_in_gpu-star) :star:
@@ -26,6 +27,7 @@
   - [CUDA-Related](#cuda-related)
   - [cudnn-fronted](#cudnn-fronted)
   - [Cute-learning](#cute-learning)
+  - [knn&kmeans](#knnkmeans)
 - LLM
   - [vLLM](#vllm)
   - [sglang](#sglang)
@@ -73,6 +75,14 @@ https://github.com/NVIDIA/cuda-samples
 来自NVIDIA的cuda编程示例，并不基础，光是入门0_introduction部分都有很多内容
 
 非常好的学习资料
+
+### tensort-cookbook
+
+https://github.com/NVIDIA/trt-samples-for-hackathon-cn/tree/master/cookbook
+
+来自NVIDIA用于hackathon比赛准备的从基础到进阶的TensorRT实践教程，提供了很多TensorRT高级特性的示例
+
+可以配合官方讲解视频学习 https://www.bilibili.com/video/BV1jj411Z7wG/
 
 ### GPU-Puzzles
 
@@ -216,6 +226,12 @@ https://github.com/DD-DuDa/Cute-Learning
 - ...
 
 是上手学习cutlass cute编程的一个好工作
+
+### knn&kmeans
+
+1. [Pointcept/knn](https://github.com/Pointcept/Pointcept/tree/main/libs/pointops2/src/knnquery)
+1. [krulis-martin/cuda-kmeans](https://github.com/krulis-martin/cuda-kmeans)
+2. [src-d/kmcuda](https://github.com/src-d/kmcuda)
 
 ## LLM
 
@@ -567,9 +583,11 @@ CCCL = Thrust(并行算法库) + CUB(优化的并行原语库) + libcudacxx(CUDA
 - [知乎-深入浅出GPU优化系列：reduce优化 ](https://zhuanlan.zhihu.com/p/426978026)
 - [NVIDIA-CUDA reduce optimization](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
 - [NVIDIA-cuSparse documention](https://docs.nvidia.com/cuda/cusparse/index.html)
+- [NVIDIA-cuBlas documention](https://docs.nvidia.com/cuda/cublas/)
 - [unsloth-blogs](https://unsloth.ai/blog)
 - [整理的名词一览](https://github.com/caibucai22/awesome-cuda/blob/main/Glossary.md)
 - [谭升的博客 CUDA_C_Programing系列](https://face2ai.com/categories/CUDA/)
 - [ZOMI AI体系知识： 硬件、编程、编译、推理系统&引擎&框架 ](https://chenzomi12.github.io/index.html)
 - [ 奔跑的IC CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/)
+- [NVIDIA ken-he TensorRT博客](https://developer.nvidia.com/zh-cn/blog/author/ken-he/)
 
