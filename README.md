@@ -13,6 +13,9 @@
 ## Table of Contents 
 
 - Basic
+  - [Turbo-Softmax](#turbo-softmax)
+  - [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](#how-to-write-a-fast-matrix-multiplication-from-scratch-with-tensor-cores)
+  - [Implementing a fast Tensor Core matmul on the Ada Architecture](#implementing-a-fast-tensor-core-matmul-on-the-ada-architecture)
   - [cuda-samples](#cuda-samples) :star::star::star::star::star:
   - [tensorrt-cookbook](#tensort-cookbook)
   - [GPU-Puzzles](#gpu-puzzles)
@@ -68,6 +71,21 @@
 
 ## Basic
 
+### Turbo-Softmax
+https://github.com/LongWeihan/Turbo-Softmax
+https://zhuanlan.zhihu.com/p/1996636375152342490
+在知乎发现的这个工作，还未测试
+
+通过替换和近似 exp() 和 div 实现加速
+- exp：poly5（范围归约 + 五阶多项式近似）
+- 1/sum：div（直接 1.0f/sum）
+
+### How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores
+从零开始到使用tensor core 逐步加速完成矩阵乘法，超长优质文章，系统性很好
+
+### Implementing a fast Tensor Core matmul on the Ada Architecture
+专注于在 ada 架构上 消费级40系，数据中心L4系显卡，使用tensor core 实现矩阵乘法加速
+> https://zh.wikipedia.org/wiki/Ada_Lovelace_(%E5%BE%AE%E6%9E%B6%E6%9E%84)
 
 ### cuda-samples
 
@@ -597,4 +615,6 @@ CCCL = Thrust(并行算法库) + CUB(优化的并行原语库) + libcudacxx(CUDA
 - [ZOMI AI体系知识： 硬件、编程、编译、推理系统&引擎&框架 ](https://chenzomi12.github.io/index.html)
 - [ 奔跑的IC CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/)
 - [NVIDIA ken-he TensorRT博客](https://developer.nvidia.com/zh-cn/blog/author/ken-he/)
+- [从 0.44ms 到 0.04ms - 通过 CUDA 优化实现 10 倍softmax性能提升](https://zhuanlan.zhihu.com/p/1964020134839576011)
+- [有点难！Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199)
 
