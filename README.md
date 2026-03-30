@@ -9,7 +9,7 @@
 
 > 系统化整理深度学习 **CUDA 加速与部署** 生态资源，聚焦生产环境优化方案
 
-**维护状态**: ✅ 活跃更新 | **最后更新**: 2025-06-18 | **分支**: [`new-organization`](https://github.com/caibucai22/awesome-cuda/tree/new-organization)
+**维护状态**: ✅ 活跃更新 | **最后更新**: 2026-03-30 | **分支**: [`new-organization`](https://github.com/caibucai22/awesome-cuda/tree/new-organization)
 
 ---
 
