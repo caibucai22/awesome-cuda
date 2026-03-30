@@ -36,7 +36,7 @@
 | 🚀 [生产框架](#-生产框架) | 10 | 部署工程师 | LLM/CV/点云推理服务框架 |
 | 🔧 [算子库 & 内核](#-算子库--内核) | 15 | 性能优化者 | Attention、GEMM、CV/点云算子 |
 | 🛠️ [工具 & 生态](#-工具--生态) | 6 | 全栈开发者 | NVIDIA 官方库、编译器、数据加载 |
-| 📖 [面试 & 知识](#-面试--知识) | 5 | 求职者 | 面试题、知识总结、博客合集 |
+| 📖 [面试 & 知识](#-面试--知识) | 5 | 求职者 | 面试题、知识总结、**12 篇博客** |
 
 ---
 
@@ -79,13 +79,13 @@
 
 ### LLM 推理
 
-| 项目 | Stars | 适用场景 | 硬件要求 |
-|------|-------|----------|----------|
-| [vLLM](https://github.com/vllm-project/vllm) | ⭐ 40k+ | 高吞吐在线服务 | Ampere+ |
-| [sglang](https://github.com/sgl-project/sglang) | ⭐ 10k+ | 快速部署、结构化输出 | Ampere+ |
-| [llama.cpp](https://github.com/ggerganov/llama.cpp) | ⭐ 70k+ | 本地推理、资源受限环境 | Any CUDA |
-| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | ⭐ 8k+ | NVIDIA 生态最优性能 | Hopper+ |
-| [Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference) | ⭐ 2k+ | LLM 推理全景图（论文/框架/技术） | - |
+| 项目 | Stars | 适用场景 |
+|------|-------|----------|
+| [vLLM](https://github.com/vllm-project/vllm) | ⭐ 40k+ | 高吞吐在线服务 |
+| [sglang](https://github.com/sgl-project/sglang) | ⭐ 10k+ | 快速部署、结构化输出 |
+| [llama.cpp](https://github.com/ggerganov/llama.cpp) | ⭐ 70k+ | 本地推理、资源受限环境 |
+| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | ⭐ 8k+ | NVIDIA 生态最优性能 |
+| [Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference) | ⭐ 2k+ | LLM 推理全景图（论文/框架/技术） |
 
 ### CV 推理
 
@@ -125,8 +125,6 @@
 | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) | ⭐ 2k+ | DeepSeek-V3 FP8 GEMM，JIT 编译 | FP8 |
 | [CUDA_gemm](https://github.com/Cjkkkk/CUDA_gemm) | ⭐ 500+ | 块稀疏 + 非均匀量化 GEMM | INT4/FP16 |
 | [grouped_gemm](https://github.com/tgale96/grouped_gemm) | ⭐ 200+ | MoE 分组 GEMM（Cutlass） | FP16/BF16 |
-| [Turbo-Softmax](https://github.com/LongWeihan/Turbo-Softmax) | ⭐ 100+ | exp/div 多项式近似加速 | FP32 |
-| [gpu-topk](https://github.com/anilshanbhag/gpu-topk) | ⭐ 200+ | GPU 并行 Top-K 选择算法 | Any |
 
 ### 通用算子库
 
@@ -134,10 +132,9 @@
 |------|-------|------|
 | [CUDA-Learn-Notes](https://github.com/DefTruth/CUDA-Learn-Notes) | ⭐ 3k+ | **150+ kernel**，98%~100% cuBLAS 性能 |
 | [CUDA_Kernel_Samples](https://github.com/Tongkaio/CUDA_Kernel_Samples) | ⭐ 500+ | 高频面试算子题目（naive → 优化） |
-| [knn&kmeans](https://github.com/Pointcept/Pointcept/tree/main/libs/pointops2/src/knnquery) | ⭐ 1k+ | 点云 KNN/Kmeans 实现集合 |
-| &nbsp; | &nbsp; | ├─ [Pointcept/knn](https://github.com/Pointcept/Pointcept/tree/main/libs/pointops2/src/knnquery) |
-| &nbsp; | &nbsp; | ├─ [cuda-kmeans](https://github.com/krulis-martin/cuda-kmeans) |
-| &nbsp; | &nbsp; | └─ [kmcuda](https://github.com/src-d/kmcuda) |
+| [Turbo-Softmax](https://github.com/LongWeihan/Turbo-Softmax) | ⭐ 100+ | exp/div 多项式近似加速 |
+| [gpu-topk](https://github.com/anilshanbhag/gpu-topk) | ⭐ 200+ | GPU 并行 Top-K 选择算法 |
+| [Pointcept/knn](https://github.com/Pointcept/Pointcept/tree/main/libs/pointops2/src/knnquery)、 [cuda-kmeans](https://github.com/krulis-martin/cuda-kmeans)、[kmcuda](https://github.com/src-d/kmcuda) | ⭐ 1k+ | 点云 、KNN/Kmeans 实现集合 |
 
 ### CV 算子 & 工具
 
@@ -178,16 +175,21 @@
 
 | 作者/来源 | 链接 | 主题 |
 |-----------|------|------|
-| **国内大厂** | [知乎 - GPU CUDA 高频面试](https://zhuanlan.zhihu.com/p/678602674) | 面试汇总 |
+| **知乎-国内大厂** | [GPU CUDA 高频面试问题汇总](https://zhuanlan.zhihu.com/p/678602674) | 面试汇总 |
+| **知乎-IC** | [从 0.44ms 到 0.04ms - 10倍softmax优化](https://zhuanlan.zhihu.com/p/1964020134839576011) | Softmax 优化实战 |
+| **知乎-IC** | [深入浅出GPU优化系列：reduce优化](https://zhuanlan.zhihu.com/p/426978026) | Reduce 优化 |
+| **知乎-博客** | [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://zhuanlan.zhihu.com/p/678602674) | Tensor Core 矩阵乘法系统教程 |
+| **知乎-博客** | [Implementing a fast Tensor Core matmul on the Ada Architecture](https://zhuanlan.zhihu.com/p/678602674) | Ada 架构 Tensor Core 优化 |
+| **知乎-PTX** | [Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199) | Tensor Core 底层编程 |
+| **知乎-PTX** | [Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199) | Tensor Core 底层编程 |
 | **谭升** | [CUDA_C_Programming 系列](https://face2ai.com/categories/CUDA/) | 入门到进阶 |
+| **奔跑的IC** | [CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/) | 学习笔记 |
 | **ZOMI** | [AI 体系知识](https://chenzomi12.github.io/index.html) | 硬件、编译、推理 |
 | **Ken He** | [NVIDIA TensorRT 博客](https://developer.nvidia.com/zh-cn/blog/author/ken-he/) | TensorRT 官方 |
 | **NVIDIA** | [reduction.pdf](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf) | Reduce 优化 |
-| **unsloth** | [unsloth.ai/blog](https://unsloth.ai/blog) | LLM 量化与优化 |
-| **知乎-IC** | [从 0.44ms 到 0.04ms - 10倍softmax优化](https://zhuanlan.zhihu.com/p/1964020134839576011) | Softmax 优化实战 |
-| **知乎-PTX** | [Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199) | Tensor Core 底层编程 |
 | **NVIDIA** | [cuSparse documentation](https://docs.nvidia.com/cuda/cusparse/index.html) | 稀疏矩阵库 |
 | **NVIDIA** | [cuBLAS documentation](https://docs.nvidia.com/cuda/cublas/) | 基本线性代数库 |
+| **unsloth** | [unsloth.ai/blog](https://unsloth.ai/blog) | LLM 量化与优化 |
 
 ---
 
@@ -207,35 +209,3 @@
 ### License
 
 CC0 1.0 Universal - 公共领域贡献
-
----
-
-## 📚 推荐学习路径
-
-### 入门路线（0 → 3 个月）
-
-1. **CUDA 基础**: [CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman) → [cuda-samples](https://github.com/NVIDIA/cuda-samples)
-2. **矩阵乘法实战**: [MatmulTutorial](https://github.com/KnowingNothing/MatmulTutorial)
-3. **理解并行思维**: [GPU-Puzzles](https://github.com/srush/GPU-Puzzles)
-
-### 优化进阶（3 → 6 个月）
-
-1. **kernel 优化方法论**: [How_to_optimize_in_GPU](https://github.com/Liu-xiandong/How_to_optimize_in_GPU)
-2. **Cutlass Cute**: [Cute-Learning](https://github.com/DD-DuDa/Cute-Learning)
-3. **实战案例解析**: [how-to-optim-algorithm-in-cuda](https://github.com/BBuf/how-to-optim-algorithm-in-cuda)
-
-### 专项深入（按方向选择）
-
-- **LLM 推理**: [llama.cpp](https://github.com/ggerganov/llama.cpp) → [FlashAttention](https://github.com/Dao-AILab/flash-attention) → [vLLM](https://github.com/vllm-project/vllm)
-- **CV 部署**: [tensorrtx](https://github.com/wang-xinyu/tensorrtx) → [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)（多模态）
-- **编译器**: [tvm_mlir_learn](https://github.com/BBuf/tvm_mlir_learn)
-- **面试准备**: [CUDA-Learn-Notes](https://github.com/DefTruth/CUDA-Learn-Notes) + [cuda-learn-note](https://github.com/whutbd/cuda-learn-note)
-
-### 生产框架选型
-
-| 场景 | 推荐框架 | 理由 |
-|------|----------|------|
-| 高吞吐 LLM 服务 | vLLM / sglang | PagedAttention + 连续批处理 |
-| 本地/边缘推理 | llama.cpp | 资源占用低，支持 GGUF 量化 |
-| NVIDIA 极致性能 | TensorRT-LLM | TensorRT 生态 + 最新优化 |
-| 学术研究/原型 | FlashAttention | 源码清晰，易修改实验 |
