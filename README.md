@@ -30,6 +30,10 @@
 
 **使用建议**: 按 [快速索引](#-快速索引) 选择类别，或参考底部的 [推荐学习路径](#-推荐学习路径) 系统性入门。
 
+---
+
+> 💡 **版本说明**: 当前展示为 **new-organization 分支**（按资源类型重新分类）。如需查看原始版本（按应用领域分类），请访问 [main 分支 README](https://github.com/caibucai22/awesome-cuda/blob/main/README.md)。
+
 | 类别 | 项目数 | 适合人群 | 描述 |
 |------|--------|----------|------|
 | 📚 [学习教程](#-学习教程) | 16 | 初学者 → 进阶 | CUDA 编程入门、优化技巧、专项深入 |
@@ -175,12 +179,9 @@
 
 | 作者/来源 | 链接 | 主题 |
 |-----------|------|------|
-| **知乎-国内大厂** | [GPU CUDA 高频面试问题汇总](https://zhuanlan.zhihu.com/p/678602674) | 面试汇总 |
-| **知乎-IC** | [从 0.44ms 到 0.04ms - 10倍softmax优化](https://zhuanlan.zhihu.com/p/1964020134839576011) | Softmax 优化实战 |
-| **知乎-IC** | [深入浅出GPU优化系列：reduce优化](https://zhuanlan.zhihu.com/p/426978026) | Reduce 优化 |
-| **知乎-博客** | [How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores](https://zhuanlan.zhihu.com/p/678602674) | Tensor Core 矩阵乘法系统教程 |
-| **知乎-博客** | [Implementing a fast Tensor Core matmul on the Ada Architecture](https://zhuanlan.zhihu.com/p/678602674) | Ada 架构 Tensor Core 优化 |
-| **知乎-PTX** | [Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199) | Tensor Core 底层编程 |
+| **知乎** | [GPU CUDA 高频面试问题汇总](https://zhuanlan.zhihu.com/p/678602674) | 面试汇总 |
+| **知乎** | [从 0.44ms 到 0.04ms - 10倍softmax优化](https://zhuanlan.zhihu.com/p/1964020134839576011) | Softmax 优化实战 |
+| **知乎** | [深入浅出GPU优化系列：reduce优化](https://zhuanlan.zhihu.com/p/426978026) | Reduce 优化 |
 | **知乎-PTX** | [Nvidia Tensor Core-MMA PTX编程入门](https://zhuanlan.zhihu.com/p/621855199) | Tensor Core 底层编程 |
 | **谭升** | [CUDA_C_Programming 系列](https://face2ai.com/categories/CUDA/) | 入门到进阶 |
 | **奔跑的IC** | [CUDA_C_Programming 学习](https://zmurder.github.io/categories/CUDA/) | 学习笔记 |
@@ -190,6 +191,8 @@
 | **NVIDIA** | [cuSparse documentation](https://docs.nvidia.com/cuda/cusparse/index.html) | 稀疏矩阵库 |
 | **NVIDIA** | [cuBLAS documentation](https://docs.nvidia.com/cuda/cublas/) | 基本线性代数库 |
 | **unsloth** | [unsloth.ai/blog](https://unsloth.ai/blog) | LLM 量化与优化 |
+|  | 《How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores》 | Tensor Core 矩阵乘法系统教程 |
+|  | 《Implementing a fast Tensor Core matmul on the Ada Architecture》 | Ada 架构 Tensor Core 优化 |
 
 ---
 
