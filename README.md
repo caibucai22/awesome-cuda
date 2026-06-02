@@ -56,6 +56,8 @@
 | [CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman) | ⭐ 1k+ | 谭升博客系列教程，质量极高，入门首选 |
 | [GPU-Puzzles](https://github.com/srush/GPU-Puzzles) | ⭐ 3k+ | Python 可视化学习，理解 GPU 并行思维 |
 | [MatmulTutorial](https://github.com/KnowingNothing/MatmulTutorial) | ⭐ 500+ | 矩阵乘法从零到优化的完整教程 |
+|[AIInfra](https://github.com/Infrasys-AI/AIInfra)|⭐ 7.2k+| 一个全面的AIInfra全景介绍，从模型应用到到底层硬件全生态，聚焦 LLM 生态 |
+|[AISystem](https://github.com/Infrasys-AI/AISystem)|⭐ 16.9k+|聚焦AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术|
 
 ### 优化进阶
 
