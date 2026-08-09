@@ -9,7 +9,7 @@
 
 > 系统化整理深度学习 **CUDA 加速与部署** 生态资源，聚焦生产环境优化方案
 
-**维护状态**: ✅ 活跃更新 | **最后更新**: 2026-03-30 | **分支**: [`new-organization`](https://github.com/caibucai22/awesome-cuda/tree/new-organization)
+**维护状态**: ✅ 活跃更新 | **最后更新**: 2026-08-09 | **分支**: [`new-organization`](https://github.com/caibucai22/awesome-cuda/tree/new-organization)
 
 ---
 
@@ -56,8 +56,8 @@
 | [CUDA_Freshman](https://github.com/Tony-Tan/CUDA_Freshman) | ⭐ 1k+ | 谭升博客系列教程，质量极高，入门首选 |
 | [GPU-Puzzles](https://github.com/srush/GPU-Puzzles) | ⭐ 3k+ | Python 可视化学习，理解 GPU 并行思维 |
 | [MatmulTutorial](https://github.com/KnowingNothing/MatmulTutorial) | ⭐ 500+ | 矩阵乘法从零到优化的完整教程 |
-|[AIInfra](https://github.com/Infrasys-AI/AIInfra)|⭐ 7.2k+| 一个全面的AIInfra全景介绍，从模型应用到到底层硬件全生态，聚焦 LLM 生态 |
-|[AISystem](https://github.com/Infrasys-AI/AISystem)|⭐ 16.9k+|聚焦AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术|
+| [AIInfra](https://github.com/Infrasys-AI/AIInfra) | ⭐ 7.2k+ | 一个全面的 AIInfra 全景介绍，从模型应用到底层硬件全生态，聚焦 LLM 生态 |
+| [AISystem](https://github.com/Infrasys-AI/AISystem) | ⭐ 16.9k+ | 聚焦 AI 系统，包括 AI 芯片、AI 编译器、AI 推理和训练框架等 AI 全栈底层技术 |
 
 ### 优化进阶
 
@@ -76,6 +76,19 @@
 | [CUDA-Related](https://github.com/sungenglab/CUDA-Related) | ⭐ 2k+ | 分阶段系统教程（含 LLM 推理） |
 | [tensorrt-cookbook](https://github.com/NVIDIA/trt-samples-for-hackathon-cn/tree/master/cookbook) | ⭐ 1k+ | NVIDIA 官方 TensorRT 实践教程（Hackathon） |
 | [llm.c](https://github.com/karpathy/llm.c) | ⭐ 5k+ | 纯 C/CUDA 实现 LLM training，学习基础算子最佳实践 |
+
+### DSL
+
+| 项目 | Stars | 简介 |
+|------|-------|------|
+| [triton-lang/triton](https://github.com/triton-lang/triton) | ⭐ 19.9k+ | OpenAI，自动调优，生态最广 |
+| [tile-ai/tilelang](https://github.com/tile-ai/tilelang) | ⭐ 6.6k+ | 当前最火的 kernel DSL，GPU/CPU/加速器通用，DeepSeek/Qwen 官方采用 |
+| [deepseek-ai/TileKernels](https://github.com/deepseek-ai/TileKernels) | ⭐ 1.6k+ | Python 实现，用 TileLang 编写的 kernel 库 |
+| [HazyResearch/ThunderKittens](https://github.com/HazyResearch/ThunderKittens) | ⭐ 3.5k+ | CUDA 实现，tile 原语框架，用简洁抽象写出接近手工优化的 kernel |
+
+### 热点方向
+
+- 自动生成 kernel
 
 ---
 
@@ -123,14 +136,45 @@
 | [SpargeAttn](https://github.com/thu-ml/SpargeAttn) | ⭐ 1k+ | 无训练稀疏注意力 | Any |
 | [cuda_self-attention](https://github.com/Fizzmy/cuda_self_attention) | ⭐ 200+ | 细粒度算子拆分教学 | Any |
 | [ffpa-attn-mma](https://github.com/DefTruth/ffpa-attn-mma) | ⭐ 300+ | O(1) SRAM 复杂度 | Ampere+ |
+| [flashinfer-ai/flashinfer](https://github.com/flashinfer-ai/flashinfer) | ⭐ 6.0k+ | LLM Serving 专用 kernel 库，被 vLLM/SGLang 广泛集成，支持 PagedAttention/MoE | Any |
+| [QwenLM/FlashQLA](https://github.com/QwenLM/FlashQLA) | ⭐ 600+ | Qwen 出品，基于 TileLang 的高性能线性注意力 kernel 库 | Any |
 
 ### GEMM 实现
 
 | 项目 | Stars | 特性 | 精度 |
 |------|-------|------|------|
+| [siboehm/SGEMM_CUDA](https://github.com/siboehm/SGEMM_CUDA) | ⭐ 1.25k+ | 配套经典博客，10 步从 1% 优化到接近 cuBLAS，讲解最清晰 | FP32 |
 | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) | ⭐ 2k+ | DeepSeek-V3 FP8 GEMM，JIT 编译 | FP8 |
 | [CUDA_gemm](https://github.com/Cjkkkk/CUDA_gemm) | ⭐ 500+ | 块稀疏 + 非均匀量化 GEMM | INT4/FP16 |
 | [grouped_gemm](https://github.com/tgale96/grouped_gemm) | ⭐ 200+ | MoE 分组 GEMM（Cutlass） | FP16/BF16 |
+| [Bruce-Lee-LY/cuda_hgemm](https://github.com/Bruce-Lee-LY/cuda_hgemm) | ⭐ 556 | WMMA API + MMA PTX 指令双路线，对比 cuBLAS，工程参考价值高 | fp16/bf16 |
+| [bytedance/flux](https://github.com/bytedance/flux) | ⭐ 1.3k+ | 通信-计算重叠 GEMM，TP/EP 并行，基于 CUTLASS | FP16/BF16 |
+| [NVIDIA/cutlass](https://github.com/NVIDIA/cutlass) | ⭐ 10.1k+ | C++，NVIDIA 官方高性能线性代数模板库，几乎所有高性能 GEMM kernel 的基座 | 通用 |
+| Marlin (vLLM 内置) | - | W4A16 高速推理 GEMM，业界主流 | W4A16 |
+
+### MoE 优化
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [deepseek-ai/DeepEP](https://github.com/deepseek-ai/DeepEP) | ⭐ 9.8k+ | 专家并行通信库，NVLink/RDMA 高吞吐 all-to-all，MoE 训推关键 |
+
+### 量化 kernel
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [bitsandbytes-foundation/bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes) | ⭐ 8.3k+ | k-bit 量化 (QLoRA 基石)，8-bit 优化器 |
+| [casper-hansen/AutoAWQ](https://github.com/casper-hansen/AutoAWQ) | ⭐ 2.4k+ | AWQ 4-bit 量化算法 (已归档，kernel 在 AutoAWQ_kernels) |
+| [casper-hansen/AutoAWQ_kernels](https://github.com/casper-hansen/AutoAWQ_kernels) | - | AutoAWQ 配套的底层 C++/CUDA kernel 库 |
+| [ModelCloud/GPTQModel](https://github.com/ModelCloud/GPTQModel) | ⭐ 1.2k+ | GPTQ 量化工具包，支持 N 卡/AMD/Intel/Apple，对接 vLLM/SGLang (AutoGPTQ 的继任者) |
+| Marlin (vLLM 内置) | - | W4A16 高速推理 GEMM，业界主流 |
+
+### LLM 专属算子库
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [sgl-project/SpecForge](https://github.com/sgl-project/SpecForge) | ⭐ 1.1k+ | 训练 EAGLE/EAGLE3 投机解码模型并对接 SGLang serving |
+| [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) | ⭐ 3.4k+ | Python/CUDA，NVIDIA 官方，FP8/FP4 训练加速，Hopper/Blackwell 混精 |
+| [linkedin/Liger-Kernel](https://github.com/linkedin/Liger-Kernel) | ⭐ 6.5k+ | LinkedIn 出品，训练用 Triton kernel (RMSNorm/RoPE/SwiGLU 等融合) |
 
 ### 通用算子库
 
@@ -162,6 +206,7 @@
 | [DALI](https://github.com/NVIDIA/DALI) | ⭐ 2k+ | 数据加载 | GPU 加速数据预处理 |
 | [CV-CUDA](https://github.com/CVCUDA/CV-CUDA) | ⭐ 1k+ | 图像处理 | NVIDIA + ByteDance 联合开发 |
 | [CCCL](https://github.com/NVIDIA/cccl) | ⭐ 2k+ | C++ 核心库 | Thrust + CUB + libcudacxx 集合 |
+| [NVIDIA/cutlass](https://github.com/NVIDIA/cutlass) | ⭐ 10.1k+ | GEMM 模板库 | C++，NVIDIA 官方高性能线性代数模板库，几乎所有高性能 GEMM kernel 的基座 |
 
 ---
 
@@ -175,7 +220,7 @@
 |------|-------|------|
 | [cuda-learn-note](https://github.com/whutbd/cuda-learn-note) | ⭐ 1k+ | 面试常见 kernel 实现 + 优化总结 |
 | [AI-Interview-Code](https://bruceyuan.com/hands-on-code/) | ⭐ 500+ | 手写注意力机制等（Python） |
-| [CUDA_Kernel_Samples](https://github.com/Tongkaio/CUDA_Kernel_Samples) | ⭐ 500+ | 高频面试算子（重复收录见算子库）|
+| [CUDA_Kernel_Samples](https://github.com/Tongkaio/CUDA_Kernel_Samples) | ⭐ 500+ | 高频面试算子（重复收录见算子库） |
 
 ### 博客合集
 
