@@ -206,6 +206,7 @@
 | [DALI](https://github.com/NVIDIA/DALI) | ⭐ 2k+ | 数据加载 | GPU 加速数据预处理 |
 | [CV-CUDA](https://github.com/CVCUDA/CV-CUDA) | ⭐ 1k+ | 图像处理 | NVIDIA + ByteDance 联合开发 |
 | [CCCL](https://github.com/NVIDIA/cccl) | ⭐ 2k+ | C++ 核心库 | Thrust + CUB + libcudacxx 集合 |
+| [flameox](https://github.com/morluto/flameox) | ⭐ 6 | 性能分析 | 面向智能体的性能分析与优化工具包，协调 PyTorch Profiler、Nsight Systems 等工具，保留原生运行时证据并比较 GPU 内核和推理负载的运行结果 |
 | [NVIDIA/cutlass](https://github.com/NVIDIA/cutlass) | ⭐ 10.1k+ | GEMM 模板库 | C++，NVIDIA 官方高性能线性代数模板库，几乎所有高性能 GEMM kernel 的基座 |
 
 ---
